@@ -7,6 +7,7 @@ selectionpart.CanCollide = false
 selectionpart.Anchored = true
 local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
+local rs = game:GetService("RunService")
 
 mouse.Move:Connect(function()
 	local raycastresult = workspace:Raycast(mouse.Hit.Position + Vector3.new(0,150,0),Vector3.new(0,-250,0))
